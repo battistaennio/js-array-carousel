@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item-container{
+    margin: 10% 20%;
+    position: relative;
+}
+
+.item img{
+    width: 100%;
+}
+
+.arrow{
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
+    width: 25px;
+    height: 25px;
+    color: rgb(122, 122, 122);
+    background-color: lightgrey;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+
+#arrow-up{
+    top: 10px;
+}
+
+#arrow-down{
+    bottom: 10px;
+}
+
