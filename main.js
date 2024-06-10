@@ -17,5 +17,10 @@ for (let i = 0; i < imgArray.length ; i++) {
     
     //inserimento div.item nel div.items-container
     itemsContainer.innerHTML += itemContent;
-
 }
+
+//selettore elementi div.item
+const divItems = document.getElementsByClassName("item");
+
+//asseganzione classe .active al primo elemento generato (default)
+divItems[0].classList.add("active");

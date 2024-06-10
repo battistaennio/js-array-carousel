@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
-.item-container{
+.items-container{
     margin: 10% 20%;
     position: relative;
+
+}
+
+.item{
+    display: none;
+}
+
+.item.active{
+    display: block;
 }
 
 .item img{
