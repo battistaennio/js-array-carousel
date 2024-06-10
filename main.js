@@ -23,4 +23,28 @@ for (let i = 0; i < imgArray.length ; i++) {
 const divItems = document.getElementsByClassName("item");
 
 //asseganzione classe .active al primo elemento generato (default)
-divItems[0].classList.add("active");
+let activeItem = 0;
+divItems[activeItem].classList.add("active");
+
+//selettore "bottone" arrow-down
+const next = document.getElementById("arrow-down")
+
+//creazione evento "foto successiva" su click di arrow-down
+next.addEventListener("click",
+    function () {
+
+        //condizione per verificare se siamo alla fine della lista
+        if (activeItem < imgArray.length - 1){
+
+        //togliere .active alla foto precedente
+        divItems[activeItem].classList.remove("active");
+        
+        //incremento valore di activeItem per passare alla foto successiva
+        activeItem++;
+
+        //aggiungere la classe active anche alla nuova foto
+        divItems[activeItem].classList.add("active");
+
+        }
+    }
+);
