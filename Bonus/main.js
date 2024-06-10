@@ -42,9 +42,18 @@ next.addEventListener("click",
         //incremento valore di activeItem per passare alla foto successiva
         activeItem++;
 
-        //aggiungere la classe active anche alla nuova foto
+        //aggiungere la classe active alla nuova foto
         divItems[activeItem].classList.add("active");
 
+        } else {  //altrimenti
+            //togliere .active alla foto precedente
+            divItems[activeItem].classList.remove("active");
+
+            //resetta activeItem alla prima foto in lista
+            activeItem = 0;
+
+            //aggiungere .active alla nuova foto
+            divItems[activeItem].classList.add("active");
         }
 
     } 
@@ -69,6 +78,17 @@ previous.addEventListener("click",
         //aggiungere la classe active anche alla nuova foto
         divItems[activeItem].classList.add("active");
 
+        } 
+        
+        else {  //altrimenti
+            //togliere .active alla foto precedente
+            divItems[activeItem].classList.remove("active");
+
+            //resetta activeItem all'ultima foto in lista
+            activeItem = imgArray.length - 1;
+
+            //aggiungere .active alla nuova foto
+            divItems[activeItem].classList.add("active");
         }
     }
 );
