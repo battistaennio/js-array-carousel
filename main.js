@@ -48,3 +48,26 @@ next.addEventListener("click",
         }
     }
 );
+
+//selettore "bottone" arrow-up
+const previous = document.getElementById("arrow-up");
+
+//creazione evento "foto precedente" su click di arrow-up
+previous.addEventListener("click",
+    function () {
+
+        //condizione per verificare se siamo all'inizio della lista
+        if (activeItem != 0){
+
+        //togliere .active alla foto precedente
+        divItems[activeItem].classList.remove("active");
+        
+        //incremento valore di activeItem per passare alla foto successiva
+        activeItem--;
+
+        //aggiungere la classe active anche alla nuova foto
+        divItems[activeItem].classList.add("active");
+
+        }
+    }
+);

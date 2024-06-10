@@ -7,7 +7,6 @@
 .items-container{
     margin: 10% 20%;
     position: relative;
-
 }
 
 .item{
@@ -28,7 +27,7 @@
     line-height: 26px;
     width: 25px;
     height: 25px;
-    color: rgb(122, 122, 122);
+    color: rgb(125, 125, 125);
     background-color: lightgrey;
     border-radius: 50%;
     position: absolute;
